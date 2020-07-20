@@ -104,6 +104,26 @@ header {
   background-size: cover;
 }
 
+header .content {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+}
+
+header .content .images {
+  height: 100%;
+  width: 100%;
+}
+
+header .images img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .carousel-slide {
   width: 100%;
   height: 100%;
@@ -137,7 +157,6 @@ header {
   min-height: 50rem;
   margin: 0 auto;
   background-color: #f89706;
-  position: relative;
   padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,12 +203,9 @@ header {
 .main .section-cmd .imgbox__image_2 {
   width: 60%;
   height: 60%;
-  background-color: black;
-}
-
-.main .section-cmd .imgbox__image {
-  width: 60%;
-  height: 60%;
-  background-color: red;
+  background-color: url(../image/slide3.jpg);
+  position: relative;
+  bottom: 20%;
+  left: 20%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,7 +8,6 @@
         min-height: 50rem;
         margin: 0 auto;
         background-color: #f89706;
-        position: relative;
         padding:2rem;
         display: flex;
 
@@ -38,17 +37,12 @@
             &__image_2{
                 width: 60%;
                 height: 60%;
-                background-color: black;
+                background-color: url(../image/slide3.jpg);
+                position: relative;
+                bottom:20%;
+                left: 20%;
                
             }
-
-            &__image{
-                width: 60%;
-                height: 60%;
-                background-color: red;
-                
-                
-            } 
         }
     }
 

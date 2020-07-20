@@ -25,6 +25,13 @@
         </nav>
     </div>
     <header class="header">
+        <div class="content">
+            <div class="images">
+                <img src="image/header.jpg">
+                <img src="image/header2.jpg">
+            </div>
+      </div>
+      </div>
     </header>
 
     <!--main -->
@@ -37,22 +44,32 @@
                 <button class="btn">Voir plus</button>
             </div>
             <div class="imgbox">
-                <div class="imgbox__image"></div>
-                <div class="imgbox__image_2"></div>
+                <div class="imgbox__image">
+                    <img src="image/slide1.jpg" alt="" class="img">
+                </div>
+                <div class="imgbox__image_2">
+                </div>
             </div>
         </div>
-      
-        <!--   {# <div class="carte">
-            <div class="card_specialite_attieke"><img src="image/slide1.jpg" alt="" class="imgbox__image"></div>
-            <div class="card_specialite-foutou"><img src="image/slide2.jpg" alt=""  class="imgbox__image_2"></div>
-            <div class="card_specialite-riz"></div>
-        </div>
-        <div class="testimonial">
-
-        </div> #}-->
     </div>
 
     <!--footer-->
     <footer class="footer"></footer>
+
+    <script>
+        var indexValue = 0;
+        function slideShow(){
+          setTimeout(slideShow, 2500);
+          var x;
+          const img = document.querySelectorAll("img");
+          for(x = 0; x < img.length; x++){
+            img[x].style.display = "none";
+          }
+          indexValue++;
+          if(indexValue > img.length){indexValue = 1}
+          img[indexValue -1].style.display = "block";
+        }
+        slideShow();
+      </script>
 </body>
 </html>
