@@ -25,13 +25,6 @@
         </nav>
     </div>
     <header class="header">
-        <div class="content">
-            <div class="images">
-                <img src="image/header.jpg">
-                <img src="image/header2.jpg">
-            </div>
-      </div>
-      </div>
     </header>
 
     <!--main -->
@@ -55,21 +48,5 @@
 
     <!--footer-->
     <footer class="footer"></footer>
-
-    <script>
-        var indexValue = 0;
-        function slideShow(){
-          setTimeout(slideShow, 2500);
-          var x;
-          const img = document.querySelectorAll("img");
-          for(x = 0; x < img.length; x++){
-            img[x].style.display = "none";
-          }
-          indexValue++;
-          if(indexValue > img.length){indexValue = 1}
-          img[indexValue -1].style.display = "block";
-        }
-        slideShow();
-      </script>
 </body>
 </html>
