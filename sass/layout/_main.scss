@@ -1,0 +1,32 @@
+.main{
+    width: 100%;
+    min-height: 50rem;
+    margin-top: 3rem;
+
+    .section-cmd{
+        width: 70%;
+        height: 30rem;
+        margin: 0 auto;
+        background-color: #ff9900;
+    }
+
+    .carte{
+        width: 70%;
+        min-height: 50rem;
+        margin: 0 auto;
+        background-color:lightgray;
+        margin-top: 2rem;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+
+    }
+
+    .testimonial{
+        width: 100%;
+        height: 60rem;
+        background-color: #ed6b44;
+        margin-top: 2rem;
+    }
+
+}
