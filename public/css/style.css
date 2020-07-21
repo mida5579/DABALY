@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 *:focus {
@@ -14,30 +13,11 @@ html {
   font-size: 62.5%;
   line-height: 1.6;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Quicksand', sans-serif;
-}
-
-.card_specialite_attieke {
-  height: 35rem;
-  width: 30rem;
-  background-color: black;
-}
-
-.card_specialite_foutou {
-  height: 35rem;
-  width: 30rem;
-  background-color: red;
-}
-
-.card_specialite-riz {
-  height: 35rem;
-  width: 30rem;
-  background-color: orange;
 }
 
 .btn {
@@ -49,6 +29,49 @@ body {
   font-size: 2rem;
   color: #ff5f40;
   margin-top: 2rem;
+}
+
+.carte__cards {
+  flex: 1;
+  padding: 1rem;
+}
+
+.carte__cards__content {
+  width: 90%;
+  height: 40rem;
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.31);
+  border-radius: 20px;
+}
+
+.carte__cards__content__illustration {
+  width: 100%;
+  height: 25rem;
+  background-color: red;
+  border-radius: 20px;
+}
+
+.carte__cards__content__description {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.carte__cards__content__description__title {
+  font-size: 3rem;
+}
+
+.btnDetail {
+  height: 5rem;
+  width: 15rem;
+  border: none;
+  background-color: #ff5f40;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  font-size: 2rem;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  left: 50%;
 }
 
 .navbarContent {
@@ -63,27 +86,15 @@ body {
   height: 100%;
   margin: 0 auto;
   padding: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbarContent .navbar__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbarContent .navbar__link__item {
@@ -113,17 +124,13 @@ header {
 .carousel-slide .slide {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-filter: brightness(0.8);
-          filter: brightness(0.8);
+  filter: brightness(0.8);
 }
 
 .carousel-slide .slide img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .main {
@@ -132,60 +139,53 @@ header {
   margin-top: 3rem;
 }
 
-.main .section-cmd {
-  width: 70%;
+.main .carte {
   min-height: 50rem;
+  width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-cmd {
+  width: 100%;
+  height: 40rem;
   background-color: #f89706;
-  padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main .section-cmd .textblock {
-  padding: 2rem;
-  min-height: 50rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main .section-cmd .textblock h2 {
-  font-size: 4rem;
-  color: white;
-}
-
-.main .section-cmd .textblock span {
-  font-size: 3rem;
-  color: white;
-}
-
-.main .section-cmd .imgbox {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.main .section-cmd .imgbox__image_2 {
-  width: 60%;
-  height: 60%;
-  background-color: url(../image/slide3.jpg);
   position: relative;
-  bottom: 20%;
-  left: 20%;
+}
+
+.section-cmd__text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-cmd__text__heading {
+  font-size: 5rem;
+}
+
+.section-cmd__text__span {
+  font-size: 4rem;
+}
+
+.carteHeader {
+  width: 80%;
+  height: 20rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carteHeader__content {
+  font-size: 4.5rem;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
