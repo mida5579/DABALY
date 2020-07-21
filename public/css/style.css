@@ -319,11 +319,74 @@ header {
   background-color: rgba(0, 0, 0, 0.322);
   width: 40%;
   min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__link__center__icon {
+  display: inline-flex;
+  align-items: center;
+  width: 20rem;
+  margin-top: 2rem;
+}
+
+.footer__link__center__icon .icon {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 5rem;
+  background-color: #fff;
+  border-radius: 50px;
+  color: #ff5f40;
+  padding: 1rem;
+}
+
+.footer__link__center__icon p {
+  font-size: 1.5rem;
+}
+
+.footer__link__center__icon p a {
+  text-decoration: none;
 }
 
 .footer__link__rigth {
   width: 40%;
   min-height: 30rem;
   background-color: rgba(0, 0, 0, 0.322);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__link__rigth .icon {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 5rem;
+  background-color: #fff;
+  border-radius: 50px;
+  color: #ff5f40;
+  padding: 1rem;
+}
+
+.footer__link__rigth__text {
+  width: 100%;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.footer__link__rigth .footer-icons {
+  width: 100%;
+  height: 20rem;
+}
+
+.footer__link__rigth .footer-icons__icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  border-radius: 50px;
+  color: #ff5f40;
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
