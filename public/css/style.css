@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Parisienne&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -213,5 +214,116 @@ header {
   font-size: 5rem;
   color: #fff;
   font-family: 'Lato', sans-serif;
+}
+
+.footer {
+  min-width: 40rem;
+  width: 100%;
+  padding-top: 3rem;
+}
+
+.footer__newLetter {
+  width: 80%;
+  height: 20rem;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5rem;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer__newLetter h3 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footer__newLetter .formInput {
+  width: 50rem;
+  height: 5rem;
+  padding: 2rem;
+  font-size: 1.6rem;
+  border-radius: 50px;
+  border: 1px solid #ed6b447c;
+}
+
+.footer__newLetter .formButton {
+  width: 15rem;
+  height: 5rem;
+  border: none;
+  background-color: #ff5f40;
+  font-size: 1.8rem;
+  color: #fff;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  position: absolute;
+  left: 60%;
+}
+
+.footer__link {
+  width: 100%;
+  min-height: 30rem;
+  margin-top: 3rem;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  text-align: left;
+  display: flex;
+}
+
+.footer__link__left {
+  width: 40%;
+  min-height: 30rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.322);
+}
+
+.footer__link__left__logo {
+  width: 25rem;
+  height: 10rem;
+  border-radius: 50px;
+  text-align: center;
+  font-family: 'Bad Script', cursive;
+  font-size: 4rem;
+  color: #ff5f40;
+}
+
+.footer__link__left__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer__link__left__content {
+  margin: 2rem;
+}
+
+.footer__link__left__content__item {
+  text-decoration: none;
+  color: #fff;
+  border-right: 2px solid #444;
+  font-size: 1.8rem;
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 500;
+  padding-right: 2rem;
+}
+
+.footer__link__left__company {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.footer__link__center {
+  background-color: rgba(0, 0, 0, 0.322);
+  width: 40%;
+  min-height: 30rem;
+}
+
+.footer__link__rigth {
+  width: 40%;
+  min-height: 30rem;
+  background-color: rgba(0, 0, 0, 0.322);
 }
 /*# sourceMappingURL=style.css.map */
