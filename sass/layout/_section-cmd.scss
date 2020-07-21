@@ -13,6 +13,7 @@
         color: $color-white;
         top: 50%;
         left: 50%;
+        font-family: 'Lato', sans-serif;
         transform: translate(-50%,-50%);
 
         &__heading{
@@ -37,7 +38,7 @@
     &__content{
         font-size: 4.5rem;
         font-weight: 800;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Lato', sans-serif;
     }
 
 }
