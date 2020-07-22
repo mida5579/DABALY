@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -489,7 +490,7 @@ header .content__boxRigth__card {
 }
 
 .headerCarte {
-  height: 60vh;
+  height: 50vh;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/acceil2.jpg);
   background-size: cover;
@@ -861,5 +862,48 @@ header .content__boxRigth__card {
   height: 20rem;
   border: 1px solid lightgray;
   margin: 0 auto;
+}
+
+.detailSection {
+  width: 100%;
+  min-height: 50rem;
+}
+
+.detailSection__text {
+  width: 70%;
+  height: 20rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.detailSection__card {
+  width: 70%;
+  height: 40rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detailSection__card__box {
+  flex: 1;
+  padding: 1rem;
+}
+
+.detailSection__card__box__item {
+  width: 100%;
+  height: 30rem;
+  border-radius: 20px;
+  border: 1px solid lightgrey;
+}
+
+.detailSection__card__box__item .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=style.css.map */
