@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <title>Carte</title>
+
+    <!-- My styles  -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="navbarContent">
+        <nav class="navbar">
+            <div class="logoBox">
+                <a href="#">DABALY</a>
+            </div>
+            <ul class="navbar__link">
+                <li class="navbar__link__item"><a href="#">Acceil</a></li>
+                <li class="navbar__link__item"><a href="#">Carte</a></li>
+                <li class="navbar__link__item"><a href="#">Menu</a></li>
+                <li class="navbar__link__item"><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- baner -->
+    <div class="headerCarte">
+      <div class="headerCarte__content">
+          <h1>Notre carte</h1>
+      </div>
+    </div>
+    <div class="carteMain"> 
+        <div class="carteMain__textbox">
+            <h2>A savoir</h2>
+            <p>
+                Lorem ipsum dolor 
+                sit amet consectetur adipisicing elit. Maxime, natus?
+                Lorem ipsum dolor 
+                sit amet consectetur adipisicing elit. Maxime, natus?
+                sit amet consectetur adipisicing elit. Maxime, natus?
+            </p>
+        </div>
+        <div class="carteMain__card">
+            <div class="carteMain__card__sidebar">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                    <!-- <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">man</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">diva</button> -->
+                </div>
+
+                <div id="London" class="tabcontent">
+                    <h3>London</h3>
+                    <p>London is the capital city of England.</p>
+                </div>
+
+                <div id="Paris" class="tabcontent">
+                    <h3>Paris</h3>
+                    <p>Paris is the capital of France.</p>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/parallax.js"></script>
+</body>
+</html>
