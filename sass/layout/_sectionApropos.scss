@@ -1,0 +1,67 @@
+.sectionApropos{
+    width: 100%;
+    min-height: 50rem;
+    margin-top: 2rem;
+
+    .story{
+        width: 70%;
+        min-height: 30rem;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        &__cardLeft{
+            flex:1;
+            padding-top: 5rem;
+
+            h2{
+                font-size: 4rem;
+                margin-top: 2rem;
+            }
+
+            p{
+                font-size: 2rem;
+                line-height: 1.6;
+                text-align: justify;
+                padding: 2rem;
+            }
+           
+        }
+
+        &__cardRigth{
+            flex:1;
+            padding: 2rem;
+
+            &__item1{
+                width: 100%;
+                height: 30rem;
+                
+                display: flex;
+
+                &__elt{
+                    flex: 1;
+                    padding: 2rem;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            &__item2{
+                width: 100%;
+                height: 30rem;
+                padding: 2rem;
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+             
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+.recette{
+    width: 70%;
+    min-height: 50rem;
+  
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+
+    &__recetteDujr{
+        flex: 2;
+        padding: 6rem;
+        &__description{
+            width: 100%;
+            height: 60rem;
+            background-color: red;
+            .Image{
+                width: 100%;
+                height: 100%;
+                object-fit:cover;
+                border-radius: 20px;
+            }
+
+        }
+
+        &__illustration{
+            width: 100%;
+            height: 20rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            h2{
+                font-size: 4rem;
+            }
+
+            h3{
+                font-size: 2.5rem;
+                text-decoration: underline;
+                color: #f89605;
+            }
+
+            p{
+                font-size: 2rem;
+                line-height: 1.6;
+                text-align: justify;
+            }
+        }
+
+
+    }
+
+    &__recettePasse{
+        flex: 1;
+        padding-top: 6rem;
+
+        &__item{
+            width: 100%;
+            height: 15rem;
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid rgba(255, 0, 0, 0.301);
+            border-radius: 20px;
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                margin-left: 3rem;
+                box-shadow: 4px 0px 8px 0px rgba(0,0,0,0.24);
+            }
+
+            .imgBox{
+                flex:1;
+                &__image{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+            }
+
+            .textBox{
+                flex: 2;
+                padding: 1.5rem;
+
+                h2{
+                    font-size: 2rem;
+                    }
+
+                h3{
+                font-size: 1.8rem;
+                text-decoration: underline;
+                color: #f89605;
+                }
+
+                p{
+                    font-size: 1.5rem;
+                }
+                .button{
+                    font-size: 2rem;
+                    width: 13rem;
+                    height: 4rem;
+                    background-color:#f89605;
+                    color: $color-white;
+                    border: none;
+                    border-radius: 50%;
+
+                }
+            }
+        }
+    }
+    
+}
+
