@@ -81,6 +81,23 @@ body {
   left: 50%;
 }
 
+.tabcontent__card {
+  height: 30rem;
+  width: 25rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.tabcontent__card .tabcontent__card__circle {
+  height: 25rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 25rem;
+  background-color: black;
+  -webkit-clip-path: circle(59.6% at 50% 14%);
+          clip-path: circle(59.6% at 50% 14%);
+}
+
 .navbarContent {
   width: 100%;
   height: 8rem;
@@ -572,8 +589,8 @@ header .content__boxRigth__card {
 .headerCarte {
   height: 60vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../image/acceil2.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/acceil2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../image/acceil2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/acceil2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -649,25 +666,38 @@ header .content__boxRigth__card {
   width: 100%;
   min-height: 50rem;
   background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 3rem;
   /* Style the buttons inside the tab */
   /* Change background color of buttons on hover */
   /* Create an active/current "tab button" class */
-  /* Style the tab content */
 }
 
 .carteMain__card__sidebar {
-  width: 15rem;
-  height: 50rem;
-  background-color: black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.carteMain__card .tab {
+.carteMain__card__sidebar .tab {
   float: left;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
-  width: 30%;
-  height: 300px;
+  width: 100%;
+  height: 50rem;
+}
+
+.carteMain__card__content {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  /* Style the tab content */
+}
+
+.carteMain__card__content .tabcontent {
+  font-size: 3rem;
 }
 
 .carteMain__card .tab button {
@@ -693,12 +723,49 @@ header .content__boxRigth__card {
   background-color: #ccc;
 }
 
-.carteMain__card .tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
+.textBox {
   width: 70%;
-  border-left: none;
-  height: 300px;
+  height: 10rem;
+  padding: 2rem;
+}
+
+.textBox h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.textBox .socialBox {
+  width: 80%;
+  height: 10rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.textBox .socialBox h2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.textBox .socialBox__icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.textBox .socialBox__icon img {
+  height: 5rem;
+  width: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

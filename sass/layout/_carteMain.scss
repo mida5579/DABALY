@@ -32,21 +32,32 @@
         width: 100%;
         min-height: 50rem;
         background-color: red;
+        display: flex;
         margin-top: 3rem;
 
         &__sidebar{
-            width: 15rem;
-            height: 50rem;
-            background-color: black;
+            // width: 15rem;
+            // height: 50rem;
+            flex:1;
+
+            .tab {
+                float: left;
+                border: 1px solid #ccc;
+                background-color: #f1f1f1;
+                width: 100%;
+                height: 50rem;
+            }
         }
 
-        .tab {
-            float: left;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
-            width: 30%;
-            height: 300px;
+        &__content{
+            flex:4;
+              /* Style the tab content */
+          .tabcontent {
+          font-size: 3rem;
           }
+        }
+
+       
           
           /* Style the buttons inside the tab */
           .tab button {
@@ -73,14 +84,6 @@
             background-color: #ccc;
           }
           
-          /* Style the tab content */
-          .tabcontent {
-            float: left;
-            padding: 0px 12px;
-            border: 1px solid #ccc;
-            width: 70%;
-            border-left: none;
-            height: 300px;
-          }
+        
     }
 }
