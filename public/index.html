@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
  <!-- My styles  -->
     <link rel="stylesheet" href="css/style.css">
@@ -13,7 +13,7 @@
     <!-- mynavbar-->
     <div class="navbarContent">
         <nav class="navbarContent__nav">
-            <div class="navbarContent__nav__menu-icon"><span class="fas fa-bars"></span></div>
+            <div class="navbarContent__nav__menu-icon"><span class="fa fa-bars" aria-hidden="true"></span></div>
             <div class="navbarContent__nav__logo">Dabalyd'ici</div>
                 <div class="navbarContent__nav__items">
                 <li class="navbarContent__nav__items__inner "><a href="#" class="navbarContent__nav__items__inner__link">Acceil</a></li>
@@ -21,8 +21,8 @@
                 <li class="navbarContent__nav__items__inner"><a href="#" class="navbarContent__nav__items__inner__link">Blogs</a></li>
                 <li class="navbarContent__nav__items__inner"><a href="#" class="navbarContent__nav__items__inner__link">Contact</a></li>
                 </div>
-            <div class="navbarContent__nav__search-icon"><span class="fa fa-search"></span></div>
-            <div class="navbarContent__nav__cancel-icon"><span class="fa fa-times"></span></div>
+            <div class="navbarContent__nav__search-icon"><span class="fa fa-search" aria-hidden="true"></span></div>
+            <div class="navbarContent__nav__cancel-icon"><span class="fa fa-times" aria-hidden="true"></span></div>
             <form action="#" class="navbarContent__nav__form">
                 <input type="search" class="search-data" placeholder="Search" required>
                 <button type="submit" class="fa fa-search"></button>
@@ -33,8 +33,9 @@
     <header class="header">
         <div class="content">
             <div class="content__boxLeft">
-                <div class="content__boxLeft__card"> 
-                    <div class="content__boxLeft__card__clip"></div>    
+                <div class="content__boxLeft__card" id="stage"> 
+                    <img src="image/slide1.jpg" alt="">
+                    <img src="image/allocoPoisson.jpg" alt="">
                 </div>
             </div>
 
@@ -49,7 +50,9 @@
             </div>
 
             <div class="content__boxRigth">
-                <div class="content__boxRigth__card">     
+                <div class="content__boxRigth__card" id="stage"> 
+                    <img src="image/riz.jpg" alt=""> 
+                    <img src="image/slide3.jpeg" alt="">   
                 </div>
             </div>
         </div>
@@ -507,5 +510,16 @@
         </div>
     </footer>
     <script src="js/parallax.js"></script>
+    
+    <script>
+        window.addEventListener("DOMContentLoaded", function(e) {
+            var stage = document.getElementById("stage");
+            var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+            var arr = stage.getElementsByTagName("img");
+            for(var i=0; i < arr.length; i++) {
+            arr[i].addEventListener("animationend", fadeComplete, false);
+            }
+        }, false);
+    </script>
 </body>
 </html>

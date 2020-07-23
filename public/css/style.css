@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Parisienne&display=swap");
@@ -111,6 +112,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
+  /* Animation du lien */
 }
 
 @media only screen and (max-width: 1245px) {
@@ -184,6 +186,30 @@ body {
   font-size: 2rem;
   font-weight: 500;
   text-decoration: none;
+}
+
+.navbarContent__nav__items__inner__link__link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  left: 2rem;
+  height: 2rem;
+  width: 100%;
+  background-color: yellow;
+  /* Préparation de notre animation */
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all .4s;
+}
+
+.navbarContent__nav__items__inner__link__link:hover:after, .navbarContent__nav__items__inner__link__link:focus:after {
+  opacity: .6;
+  transform: translateY(0);
+}
+
+.navbarContent__nav__items__inner__link__link:focus {
+  outline: none;
 }
 
 @media only screen and (max-width: 1140px) {
@@ -276,6 +302,27 @@ body {
   display: none;
 }
 
+@media only screen and (max-width: 1140px) {
+  .navbarContent__nav__menu-icon {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .navbarContent__nav__menu-icon span {
+    display: block;
+  }
+  .navbarContent__nav__menu-icon span span.hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .navbarContent__nav__search-icon {
+    display: block;
+  }
+}
+
 .navbarContent__nav__menu-icon span {
   display: none;
 }
@@ -303,16 +350,33 @@ header .content__boxLeft {
 header .content__boxLeft__card {
   width: 100%;
   height: 100%;
-  background-image: url(../image/slide1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  transition-timing-function: ease-in-out;
 }
 
-header .content__boxLeft__card__clip {
+header .content__boxLeft__card img:nth-of-type(1) {
+  animation-name: fader;
+  animation-delay: 3s;
+  animation-duration: 1s;
+  z-index: 20;
+}
+
+header .content__boxLeft__card img:nth-of-type(2) {
+  display: none;
+}
+
+@keyframes fader {
+  from {
+    opacity: 1.0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+header .content__boxLeft__card img {
   width: 100%;
   height: 100%;
-  clip-path: circle(54.3% at 10% 51%);
+  object-fit: cover;
 }
 
 header .content__boxCenter {
@@ -368,10 +432,33 @@ header .content__boxRigth {
 header .content__boxRigth__card {
   width: 100%;
   height: 100%;
-  background-image: url(../image/riz.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  transition-timing-function: ease-in-out;
+}
+
+header .content__boxRigth__card img:nth-of-type(1) {
+  animation-name: fader;
+  animation-delay: 3s;
+  animation-duration: 1s;
+  z-index: 20;
+}
+
+header .content__boxRigth__card img:nth-of-type(2) {
+  display: none;
+}
+
+header .content__boxRigth__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes fader {
+  from {
+    opacity: 1.0;
+  }
+  to {
+    opacity: 1.1;
+  }
 }
 
 .carousel-slide {

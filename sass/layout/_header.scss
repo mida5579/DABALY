@@ -13,21 +13,41 @@ header{
             
             flex:1;
             padding: 4rem;
+            
+
+
 
             &__card{
                 width: 100%;
                 height: 100%;
-                background-image:url(../image/slide1.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-               
+                transition-timing-function: ease-in-out;
 
-                &__clip{
+                img:nth-of-type(1){
+                    animation-name: fader;
+                    animation-delay: 3s;
+                    animation-duration: 1s;
+                    z-index: 20;
+                  
+                }
+                img:nth-of-type(2){
+                  display: none;
+                    
+                }
+
+                @keyframes fader {
+                    from { opacity: 1.0; }
+                    to   { opacity: 1; }
+                }
+                // background-image:url(../image/slide1.jpg);
+                // background-repeat: no-repeat;
+                // background-size: cover;
+                // background-position: center;
+                img{
                     width: 100%;
                     height: 100%;
-                    clip-path: circle(54.3% at 10% 51%);
+                    object-fit: cover;
                 }
+
             }
             
         }
@@ -89,10 +109,33 @@ header{
             &__card{
                 width: 100%;
                 height: 100%;
-                background-image: url(../image/riz.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
+                transition-timing-function: ease-in-out;
+
+                img:nth-of-type(1){
+                    animation-name: fader;
+                    animation-delay: 3s;
+                    animation-duration: 1s;
+                    z-index: 20;
+                  
+                }
+                img:nth-of-type(2){
+                display: none;
+                    
+                }
+                // background-image:url(../image/slide1.jpg);
+                // background-repeat: no-repeat;
+                // background-size: cover;
+                // background-position: center;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                @keyframes fader {
+                    from { opacity: 1.0; }
+                    to   { opacity: 1.1; }
+                }
+
             }
             
         }
