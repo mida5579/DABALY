@@ -1,10 +1,18 @@
 @mixin responsive($breakpoint){
 
+    @if $breakpoint == pc{
+        @media  only screen and (max-width: 1440px) {@content};
+    }
+
     @if $breakpoint == tabs-land{
         @media  only screen and (max-width: 1245px) {@content};
     }
 
     @if $breakpoint == tabs-landS{
         @media  only screen and (max-width: 1140px) {@content};
+    }
+
+    @if $breakpoint == tab-port{
+        @media  only screen and (max-width: 1024px) {@content};
     }
 }

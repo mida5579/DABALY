@@ -39,6 +39,14 @@
             position:absolute;
             left: 60%;
 
+            @include responsive(pc){
+                left: 65%;
+
+            }
+
+
+            left: 65%;
+
         }
     }
 

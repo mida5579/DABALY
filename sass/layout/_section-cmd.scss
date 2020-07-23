@@ -4,6 +4,10 @@
     background-color: #f89706;
     position: relative;
 
+    @include responsive(tab-port){
+        margin-top: -68rem;
+        }
+
     &__text{
         position: relative;
         display: flex;
