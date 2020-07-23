@@ -31,7 +31,7 @@
     &__card{
         width: 100%;
         min-height: 50rem;
-        background-color: red;
+        background-color: rgba(231, 229, 229, 0.205);
         display: flex;
         margin-top: 3rem;
 
@@ -50,28 +50,37 @@
         }
 
         &__content{
-            flex:4;
+            flex:5;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          
               /* Style the tab content */
           .tabcontent {
+            flex:5;
           font-size: 3rem;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           }
         }
 
-       
+      
           
           /* Style the buttons inside the tab */
           .tab button {
             display: block;
             background-color: inherit;
             color: black;
-            padding: 22px 16px;
+            padding: 2.2rem 16rem;
             width: 100%;
             border: none;
             outline: none;
-            text-align: left;
             cursor: pointer;
             transition: 0.3s;
-            font-size: 17px;
+            font-size: 1.7rem;
           }
           
           /* Change background color of buttons on hover */

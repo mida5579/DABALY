@@ -103,6 +103,7 @@ body {
   width: 25rem;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 1px 1px 9px 3px rgba(0, 0, 0, 0.25);
 }
 
 .tabcontent__card .tabcontent__card__circle {
@@ -111,7 +112,23 @@ body {
   border-top-right-radius: 10px;
   width: 25rem;
   background-color: black;
-  clip-path: circle(59.6% at 50% 14%);
+  clip-path: circle(59.6% at 50% 33%);
+}
+
+.tabcontent__card .tabcontent__card__circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tabcontent__card .tabcontent__card__circle__text h4 {
+  font-size: 2rem !important;
+}
+
+.tabcontent__card .tabcontent__card__circle__text P {
+  font-size: 1.5rem;
 }
 
 .navbarContent {
@@ -938,7 +955,7 @@ header .content__boxRigth__card img {
 .carteMain__card {
   width: 100%;
   min-height: 50rem;
-  background-color: red;
+  background-color: rgba(231, 229, 229, 0.205);
   display: flex;
   margin-top: 3rem;
   /* Style the buttons inside the tab */
@@ -959,26 +976,34 @@ header .content__boxRigth__card img {
 }
 
 .carteMain__card__content {
-  flex: 4;
+  flex: 5;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   /* Style the tab content */
 }
 
 .carteMain__card__content .tabcontent {
+  flex: 5;
   font-size: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .carteMain__card .tab button {
   display: block;
   background-color: inherit;
   color: black;
-  padding: 22px 16px;
+  padding: 2.2rem 16rem;
   width: 100%;
   border: none;
   outline: none;
-  text-align: left;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 .carteMain__card .tab button:hover {
