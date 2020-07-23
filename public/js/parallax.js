@@ -1,9 +1,9 @@
 // navbar
-const menuBtn = document.querySelector(".menu-icon span");
-const searchBtn = document.querySelector(".search-icon");
-const cancelBtn = document.querySelector(".cancel-icon");
-const items = document.querySelector(".nav-items");
-const form = document.querySelector("form");
+const menuBtn = document.querySelector(".navbarContent__nav__menu-icon span");
+const searchBtn = document.querySelector(".navbarContent__nav__search-icon");
+const cancelBtn = document.querySelector(".navbarContent__nav__cancel-icon");
+const items = document.querySelector(".navbarContent__nav__items");
+const form = document.querySelector("navbarContent__nav__form");
 menuBtn.onclick = ()=>{
   items.classList.add("active");
   menuBtn.classList.add("hide");
