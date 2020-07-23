@@ -102,46 +102,23 @@ body {
 .navbarContent {
   width: 100%;
   height: 8rem;
-  background-color: #fff;
-  background-color: #ed6b44;
+  background-color: black;
+  position: fixed;
+  z-index: 10;
 }
 
-.navbarContent .navbar {
-  width: 70%;
-  height: 100%;
+.navbarContent__nav {
+  width: 80%;
+  height: 8rem;
+  background-color: red;
   margin: 0 auto;
-  padding: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.navbarContent .navbar__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbarContent .navbar__link__item {
-  list-style: none;
-  font-size: 2rem;
-  color: black;
-}
-
-.navbarContent .navbar__link__item a {
-  text-decoration: none;
+.navbarContent__nav__logo {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -1px;
 }
 
 header {
