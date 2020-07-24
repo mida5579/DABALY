@@ -1,10 +1,10 @@
 .footer{
-    min-width: 40rem;
+    min-height: 40rem;
     width: 100%;
     padding-top: 3rem;
 
     &__newLetter{
-        width: 80%;
+        width: 100%;
         height: 20rem;
         margin: 0 auto;
         // border: 1px solid #ff0000;
@@ -52,25 +52,29 @@
 
     &__link{
         width: 100%;
-        min-height: 30rem;
+        min-height: 20rem;
         margin-top: 3rem;
         box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
         text-align: left;
         display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        background-color: rgba(0, 0, 0, 0.322);
 
         &__left{
             width: 40%;
-            min-height: 30rem;
+            height: 10rem;
             padding: 2rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: rgba(0, 0, 0, 0.322);
+           
 
             &__logo{
                 width: 25rem;
-                height: 10rem;
+                height: 8rem;
                 border-radius: 50px;
                 text-align: center;
                 font-family: 'Bad Script', cursive;
@@ -78,11 +82,7 @@
                 color: $color-primary;
                 // background-color: red;
                 // background-color: red;
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
-                }
+               
             }
 
             &__content{
@@ -110,65 +110,68 @@
 
         }
 
-        &__center{
-            background-color: rgba(0, 0, 0, 0.322);
-            width: 40%;
-            min-height: 30rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        // &__center{
+        //     min-height: 30rem;
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        //     justify-content: center;
 
-            &__icon{
-                display: inline-flex;
-                align-items: center;
-                width: 20rem;
-                margin-top: 2rem;
+        //     &__icon{
+        //         display: inline-flex;
+        //         align-items: center;
+        //         width: 20rem;
+        //         margin-top: 2rem;
                
 
-                .icon{
-                    width: 5rem;
-                    height: 5rem;
-                    margin-right: 5rem;
-                    background-color:$color-white;
-                    border-radius: 50px;
-                    color: $color-primary;
-                    padding: 1rem;
+        //         .icon{
+        //             width: 5rem;
+        //             height: 5rem;
+        //             margin-right: 2rem;
+        //             background-color:$color-white;
+        //             border-radius: 50px;
+        //             color: $color-primary;
+        //             padding: 1rem;
                     
-                }
+        //         }
 
-                p{
-                    font-size: 1.5rem;
-                    a{
-                        text-decoration: none;
-                    }
-                }
-            }
+        //         p{
+        //             font-size: 1.5rem;
+        //             a{
+        //                 text-decoration: none;
+        //             }
+        //         }
+        //     }
 
 
 
-        }
+        // }
 
         &__rigth{
+            height: 10rem;
             width: 40%;
-            min-height: 30rem;
-            background-color: rgba(0, 0, 0, 0.322);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-           
-            
+            padding-left:2rem;
+          
 
-            .icon{
-                width: 5rem;
-                height: 5rem;
-                margin-right: 5rem;
+            h3{
+                text-align:center;
+                font-size:4rem;
+            }
+           
+        &__rigth__icons{
+                width: 100%;
+                height: 7rem;
                 background-color:$color-white;
                 border-radius: 50px;
                 color: $color-primary;
                 padding: 1rem;
-                    
+                display:flex;
+                justify-content: space-around;
+                align-items:center;  
+                a{
+                    background-color:white;
+                    font-size: 4rem;
+                }    
             }
 
             &__text{

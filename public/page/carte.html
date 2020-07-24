@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Carte</title>
 
     <!-- My styles  -->
@@ -17,10 +17,10 @@
             <div class="navbarContent__nav__menu-icon"><span class="fa fa-bars" aria-hidden="true"></span></div>
             <div class="navbarContent__nav__logo">Dabalyd'ici</div>
                 <div class="navbarContent__nav__items">
-                <li class="navbarContent__nav__items__inner "><a href="#" class="navbarContent__nav__items__inner__link">Acceil</a></li>
-                <li class="navbarContent__nav__items__inner"><a href="#" class="navbarContent__nav__items__inner__link">Apropos</a></li>
-                <li class="navbarContent__nav__items__inner"><a href="#" class="navbarContent__nav__items__inner__link">Blogs</a></li>
-                <li class="navbarContent__nav__items__inner"><a href="#" class="navbarContent__nav__items__inner__link">Contact</a></li>
+                <li class="navbarContent__nav__items__inner "><a href="../index.html" class="navbarContent__nav__items__inner__link">Acceil</a></li>
+                <li class="navbarContent__nav__items__inner"><a href="apropo.html" class="navbarContent__nav__items__inner__link">Apropos</a></li>
+                <li class="navbarContent__nav__items__inner"><a href="blog.html" class="navbarContent__nav__items__inner__link">Blogs</a></li>
+                <li class="navbarContent__nav__items__inner"><a href="contact.html" class="navbarContent__nav__items__inner__link">Contact</a></li>
                 </div>
             <div class="navbarContent__nav__search-icon"><span class="fa fa-search" aria-hidden="true"></span></div>
             <div class="navbarContent__nav__cancel-icon"><span class="fa fa-times" aria-hidden="true"></span></div>
@@ -51,63 +51,16 @@
         <div class="carteMain__card">
             <div class="carteMain__card__sidebar">
                 <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-                    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-                    <button class="tablinks" onclick="openCity(event, 'man')">man</button>
+                    <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Atieke et poisson</button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')"> du riz a la sauce</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">grillarde</button>
+                    <button class="tablinks" onclick="openCity(event, 'man')">boison</button>
                     <!-- <button class="tablinks" onclick="openCity(event, 'Tokyo')">diva</button> --> -->
                 </div>
             </div>
             <div class="carteMain__card__content">
-                <div id="paris" class="tabcontent">
-                        <div class="tabcontent__card">
-                            <div class="tabcontent__card__circle">
-                                <img src="../image/garba.jpeg" alt="">
-                            </div>
-                            <div class="tabcontent__card__text">
+                <!-- <div id="London" class="tabcontent">
 
-                            </div>
-                            <span></span>
-                        </div>
-                        <div class="tabcontent__card">
-                            <div class="tabcontent__card__circle">
-                                <img src="../image/garba.jpeg" alt="">
-                            </div>
-                            <div class="tabcontent__card__text">
-    
-                            </div>
-                            <span></span>
-                        </div>
-                        <div class="tabcontent__card">
-                            <div class="tabcontent__card__circle">
-                                <img src="../image/garba.jpeg" alt="">
-                            </div>
-                            <div class="tabcontent__card__text">
-    
-                            </div>
-                            <span></span>
-                        </div>
-
-                        <div class="tabcontent__card">
-                            <div class="tabcontent__card__circle">
-                                <img src="../image/garba.jpeg" alt="">
-                            </div>
-                            <div class="tabcontent__card__text">
-    
-                            </div>
-                            <span></span>
-                        </div>
-                </div>
-                <div id="London" class="tabcontent">
-                    <div class="tabcontent__card">
-                        <div class="tabcontent__card__circle">
-                            <img src="../image/garba.jpeg" alt="">
-                        </div>
-                        <div class="tabcontent__card__text">
-
-                        </div>
-                        <span></span>
-                    </div>
                     <div class="tabcontent__card">
                         <div class="tabcontent__card__circle">
                             <img src="../image/garba.jpeg" alt="">
@@ -135,12 +88,13 @@
 
                         </div>
                         <span></span>
-                    </div>
+                    </div> -->
             </div>
             </div>
 
         </div>
     </div>
+    <!-- footer -->
     <footer class="footer">
         <div class="footer__newLetter">
             <h3> sourcrivrez a notre new letter</h3>
@@ -148,8 +102,28 @@
                 <input type="text" name="letter" placeholder="newLetter" class="formInput">
                 <input type="submit" value="sourcrire"class="formButton">
             </form>
-
         </div>
+
+        <div class="footer__link">
+            <div class="footer__link__left">
+
+                <h3 class="footer__link__left__logo">DABALY D'ICI</h3>
+
+                <p class="footer__link__left__company">Company Name © 2015</p>
+            </div>
+            <div class="footer__link__center">
+             
+            </div>
+            <div class="footer__link__rigth">
+              <h3>Suivez nous</h3>
+                <div class="footer__link__rigth__icons">
+                    <a href="#"><i class="fa fa-facebook"aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram"aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter"aria-hidden="true"></i></a>
+                </div>
+                
+            </div>
+
         </div>
     </footer>
     <script src="../js/parallax.js"></script>
