@@ -35,6 +35,14 @@ body {
   font-size: 2rem;
   color: #ff5f40;
   margin-top: 2rem;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #ff5f40;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .carte__cards {
@@ -185,8 +193,8 @@ body {
       -ms-flex: 1;
           flex: 1;
   color: #fff;
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: 400;
   font-family: 'Lobster', cursive;
   letter-spacing: -1px;
 }
